@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>Program de desenare raster folosind elementul canvas</title>
+        <link rel="stylesheet" href="1_1082_ALEXANDRU_ANDRA_IOANA.css">
+        <script src="1_1082_ALEXANDRU_ANDRA_IOANA.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- Creem un toolbar cu linkuri pe care le putem selecta -->
+            <div class="toolbar">
+                <a href="#" id="img-file-save" onclick="SaveImg()" download="image.png">png image<img 
+                    src="Multimedia/savedisk.png"></a>
+                <a href="#" id="line" onclick="ChangeTool('line')">draw line<img src="Multimedia/line-drawing.png"></a>
+                <a href="#" id="rectangle" onclick="ChangeTool('rectangle')">draw rectangle<img src="Multimedia/rect-drawing.png"></a>
+                <a href="#" id="ellipse" onclick="ChangeTool('ellipse')">draw ellipse<img src="Multimedia/ellipse-drawing.png"></a>
+                <a href="#" id="bucket" onclick="changeColorCanvas()">canvas color<img src="Multimedia/bucket.png"></a>
+                <a href="#" id="erase"  onclick="deleteShapeFromLista()">eraser<img src="Multimedia/erase.png"></a> 
+                <p>
+                  <p1 id="colorP">Color picker</p1>
+                  <input type="color" id="colors" value="#ff0000" ></input>  
+                </p>
+                <p>
+                    <p2 id="thicknessP">Thickness picker</p2>
+                    <input type="number" id="nrThickness" value="2" ></input>                     
+                </p>             
+            </div>
+            <canvas id="tempcanvas" ></canvas>
+            <!-- Lista cu elemente selectate care pot fi selectate si sterse -->           
+            <div id="list" >
+               <button id="displayList" onclick="displayElements()">Shapes</button> 
+               <h2>Drawn Shapes List</h2>
+               <div id="shapesList" ></div>
+            </div>          
+        </div>
+    </body>
+</htm>

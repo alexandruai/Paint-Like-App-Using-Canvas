@@ -1,0 +1,94 @@
+body{
+    background-color: #0fffff;
+}
+.wrap {
+    max-width: 1100px;
+    margin: auto;
+    font-family:cursive;
+}
+.toolbar{
+    width: 105%;
+    background-color:#c1f5cf;
+    overflow: auto;
+}
+.toolbar a {
+    float: left;
+    width: 11%;
+    text-align:inherit;
+    padding: 6px 5px;
+    transition: all 0.5s ease;
+    color: white;
+}
+/*Schimba culoarea cand e pe hover */
+.toolbar a:hover {
+    background-color: #10e682;
+  }
+/* Schimba coloarea iconitei selectate */
+.selected {
+    background-color: #c1f5cf; 
+}
+#tempcanvas{
+    width: 100%;
+    background-color: white;
+    border:  15px ridge grey;
+    padding: 15px;
+    width:1300;
+    height:800;
+    position:"absolute";
+}
+#img-file-save{
+    color:grey;
+    position:inherit;
+}
+#line{
+    color:grey;
+    position:inherit;
+}
+#rectangle{
+    color:grey;
+    position:inherit;
+}
+#ellipse{
+    color:grey;
+    position:inherit;
+}
+#bucket{
+    color:grey;
+    position:inherit;
+}
+#erase{
+    color:grey;
+    position:inherit;
+    text-align:start;
+}
+#colorP{
+    color:grey;
+    position: relative;
+    right: 100;
+}
+#thicknessP{
+    color:grey;
+    position: relative;
+    text-align: center;
+}
+#displayList{
+    background-color: #c1f5cf;
+    color:#545042;
+    width: 125px;
+    height: 40px;
+    display: block;
+    border-radius: 10px;
+    margin: 7%;
+    font-size: 30px;
+    bottom: 0%;
+    left:10;
+	right:0;
+    top:10;
+    font-family:cursive;
+}
+#list{
+display:inline-block;
+background-color: white;
+align-items:left;
+background-color: #0fffff;
+}
